@@ -1,0 +1,31 @@
+#section-total {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  height: 100%;
+  font-size: 10pt;
+
+  width: 82%;
+  background-color: rgba(234, 232, 232, 0.728);
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 11px rgba(0, 0, 0, 0.153);
+}
+
+#section-total div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+#preco {
+  color: #fd377e;
+  font-weight: bold;
+
+}
+
+#valorTotal {
+  font-weight: bold;
+  color: black;
+}

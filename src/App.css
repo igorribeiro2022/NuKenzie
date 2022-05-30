@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f8f9fa;
+  height: 15vh;
+}
+
+header button {
+  background-color: #e9ecef;
+  border: none;
+  border-radius: 10px;
+  padding: 1px 15px;
+  height: 40px;
+}
+header button:hover {
+  background: #fd377e;
+  color: white;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+header h1 {
+  color: #fd377e;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 48px;
+}
+header h1 span {
+  color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80vh;
+}
+
+.sections-main {
+  margin: auto;
+  padding: 20px;
+}
+
+#section-cadastro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30vw;
+  max-width: 300px;
+  height: 400px;
+  min-height: 280px;
+  min-width: 200px;
+  gap: 20px;
+}
+
+#section-cadastrados {
+  width: 50vw;
+  height: 70vh;
+}
