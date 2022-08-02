@@ -1,32 +1,40 @@
-import { useState } from "react"
 import './Style.css'
 import Card from "../Card"
+import { useState , useEffect } from "react"
 
 function List({ listTransactions, setListTransactions }) {
-
+    
+    const [ listTransationsFiltered, setListTransationsFiltered ] = useState([])
+    
+    function filterTransactions(type) {
+        const filtered = listTransactions.filter((elem) => elem.type === type)
+        setListTransationsFiltered(filtered)
+    }
 
     function handleListTransactions(removeItem) {
         const itensFiltrados = listTransactions.filter(elem => elem.description !== removeItem)
         setListTransactions(itensFiltrados)
     }
 
-
+    useEffect(() => {
+        setListTransationsFiltered(listTransactions)
+    }, [listTransactions])
 
     return (
         <section id="secPai">
             <div id="resFin">
                 <p>Resumo Financeiro</p>
                 <div id="buttonsFilter">
-                    <button>Todos</button>
+                    <button onClick={() => setListTransationsFiltered(listTransactions)}>Todos</button>
 
-                    <button>Entradas</button>
+                    <button onClick={() => filterTransactions("Entrada")}>Entradas</button>
 
-                    <button>Despesas</button>
+                    <button onClick={() => filterTransactions("Despesa")}>Despesas</button>
                 </div>
             </div>
             <div className="divOver">
                 <div className="list">
-                    {listTransactions.length > 0 ? listTransactions.map((transaction, index) =>
+                    {listTransactions.length > 0 ? listTransationsFiltered.map((transaction, index) =>
                         <Card removerItem={handleListTransactions} transaction={transaction} key={index} />)
                         :
                         <p id="notItens">Você ainda não possui nenhum lançamento</p>}

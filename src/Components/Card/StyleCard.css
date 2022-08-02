@@ -10,7 +10,15 @@
   padding: 5px 20px;
   border-radius: 10px;
   border-left: 5px solid #03b898;
-  width: 90%;
+  width: 85%;
+}
+#card2 {
+  background-color: white;
+  margin: 5px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  border-left: 5px solid #ca3636;
+  width: 85%;
 }
 
 #divDesc {
@@ -40,4 +48,11 @@ svg {
   background-color: rgba(234, 232, 232, 0.728);
   padding: 5px;
   border-radius: 2px;
+}
+
+@media (max-width:700px) {
+  #divDesc div {
+    width: 50%;
+  }
+  
 }

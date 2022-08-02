@@ -1,4 +1,3 @@
-import { useState } from "react"
 import './Style.css';
 
 
@@ -12,7 +11,7 @@ function Total({ listTransactions }) {
         <section id="section-total">
             <div>
                 <p id="valorTotal">Valor total:</p>
-                <p id="preco">R$ {totalValue}</p>
+                <p id="preco">{totalValue.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</p>
             </div>
             <p>O valor se refere ao saldo</p>
         </section>

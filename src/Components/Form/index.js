@@ -19,7 +19,7 @@ function Form({ listTransactions, setListTransactions }) {
                 <div id="formDiv2">
                     <div>
                         <label>Valor</label>
-                        <input className="inputsForm" placeholder="Digite o valor" type='number' value={inputValue} onChange={(event) => setInputValue(Number(event.target.value))} />
+                        <input className="inputsForm" placeholder="Digite o valor" type='text' value={inputValue} onChange={(event) => setInputValue(Number(event.target.value))} />
                     </div>
                     <div>
                         <label>Tipo de Valor</label>

@@ -81,3 +81,28 @@ label {
   font-size: 10pt;
   margin: 15px 0;
 }
+
+@media (max-width: 700px) {
+  #formCadastro {
+    width: 90vw;
+    margin: 0;
+    padding: 13px 0;
+  }
+
+  #formDiv1 {
+    width: 90%;
+  }
+  #formDiv2 {
+    width: 90%;
+  }
+  
+  #formCadastro button {
+    background: #fd377e;
+    border: none;
+    border-radius: 8px;
+    padding: 13px 20px;
+    color: white;
+    width: 90%;
+  }
+  
+}

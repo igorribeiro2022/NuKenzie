@@ -11,6 +11,7 @@ header {
   justify-content: space-around;
   background-color: #f8f9fa;
   height: 15vh;
+  margin-bottom: 70px;
 }
 
 header button {
@@ -47,7 +48,7 @@ main {
 
 .sections-main {
   margin: auto;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 #section-cadastro {
@@ -58,11 +59,29 @@ main {
   max-width: 300px;
   height: 400px;
   min-height: 280px;
-  min-width: 200px;
   gap: 20px;
 }
 
 #section-cadastrados {
   width: 50vw;
   height: 70vh;
+  margin: 0 auto;
 }
+
+@media (max-width: 700px) {
+ 
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    width: 100vw;
+  }
+
+  .sections-main {
+    min-width: 90%;
+  }
+  
+}
+
