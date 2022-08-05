@@ -5,7 +5,8 @@ export const Page = styled.div`
     width: 100vw;
     height: 100vh;
     display: flex;
-
+    justify-content: center;
+    
     section {
         width: 40%;
         max-width: 560px;
